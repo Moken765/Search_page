@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>页面标题</title>
+  <style>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .search-container {
+      margin-top: 100px;
+    }
+
+    input[type="text"] {
+      width: 60%;
+      height: 30px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      width: 20%;
+      height: 35px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="search-container">
+      <form action="https://www.bing.com/search" method="GET">
+        <input type="text" name="q" placeholder="Search..." id="searchBox" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
